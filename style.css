@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f8f9fa;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details {
+  font-size: 14px;
+  float: right;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.challenges {
+  flex: 3;
+}
+
+.challenge-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.challenge-card h4 {
+  color: #28a745;
+  margin-top: 0;
+}
+
+.challenge-card button {
+  margin-top: 10px;
+  padding: 10px 14px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Add this inside your <style> tag in home.php for a better leaderboard look */
+.sidebar {
+  background: linear-gradient(135deg, #2d1b2f 80%, #ff4d4d 100%);
+  border-radius: 16px;
+  padding: 36px 24px;
+  margin-left: 40px;
+  min-width: 320px;
+  max-width: 370px;
+  box-shadow: 0 0 24px rgba(255,77,77,0.18);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar h4 {
+  color: #ff4d4d;
+  font-size: 22px;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(255,77,77,0.12);
+}
+.leaderboard-list, .sidebar ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 10px 0;
+}
+.leaderboard-list li, .sidebar ol li {
+  background: #3a2d3c;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  padding: 14px 18px;
+  color: #fff;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(255,77,77,0.10);
+  transition: background 0.2s;
+  border-left: 5px solid #ff4d4d;
+}
+.leaderboard-list li strong, .sidebar ol li strong {
+  color: #ffc0cb;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.leaderboard-list li:first-child, .sidebar ol li:first-child {
+  background: linear-gradient(90deg, #ff4d4d 80%, #ffc0cb 100%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0 4px 20px rgba(255,77,77,0.22);
+  border-left: 5px solid #ffc0cb;
+}
+.leaderboard-list li:last-child, .sidebar ol li:last-child {
+  margin-bottom: 0;
+}
+.rank {
+  font-size: 18px;
+  color: #ffc0cb;
+  margin-bottom: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.sidebar-links {
+  margin-top: 18px;
+  padding-left: 0;
+}
+.sidebar-links li {
+  margin-bottom: 10px;
+}
+.sidebar-links a {
+  color: #ffc0cb;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.sidebar-links a:hover {
+  color: #ff4d4d;
+  text-decoration: underline;
+}
+@media (max-width: 900px) {
+  .sidebar {
+    margin-left: 0;
+    margin-top: 30px;
+    max-width: 100%;
+  }
+}
